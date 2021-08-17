@@ -247,6 +247,24 @@ PHP/Laravel</p>
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script>
+      $("#submit").click(function(e) {
+        alert("heiii");
+      $.ajax({
+        url: "mail.php",
+        type: 'GET',
+        dataType: 'json', // added data type
+        success: function(res) {
+            console.log(res);
+            alert(res);
+        }
+    });
+    });
+    </script>
 
   </body>
 
