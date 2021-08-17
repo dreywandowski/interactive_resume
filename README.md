@@ -2,7 +2,7 @@
 interactive resume built for HNGi8
 
 
-## Download and Installation
+## Information
 
 The index file here takes in your name and outputs it to the browser.
 

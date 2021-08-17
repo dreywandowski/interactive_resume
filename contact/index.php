@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -210,7 +213,7 @@ PHP/Laravel</p>
         <div class="container">
         
             <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft animated" data-wow-offset="50" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInLeft;">
-              <form action="#" method="post">
+              <form action="mail" method="post">
                 <label>NAME</label>
                 <input name="fullname" type="text" class="form-control" id="fullname">
                   
@@ -223,7 +226,7 @@ PHP/Laravel</p>
                             <label>MESSAGE</label>
                 <textarea name="message" rows="4" class="form-control" id="message"></textarea>
                 <br>
-                            <input type="submit" class="form-control">
+                            <input type="submit" name="submit">
               </form><br>
             </div>
            
@@ -248,19 +251,4 @@ PHP/Laravel</p>
   </body>
 
 </html>
-<?php
-$name    = isset($_REQUEST['fullname']) ? $_REQUEST['fullname'] : "";
-$email   = isset($_REQUEST['email']) ? $_REQUEST['email'] : "";
-$number  = isset($_REQUEST['number']) ? $_REQUEST['number'] : "";
-$message = isset($_REQUEST['message']) ? $_REQUEST['message'] : "";
 
-
-if ($name !="" && $email && $number && $message){
-  
-}
-
-
-else echo "please put in a valid name";
-
-
-  ?>
