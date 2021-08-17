@@ -1,13 +1,37 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
+/**use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
+ **/
 $name    = isset($_REQUEST['fullname']) ? $_REQUEST['fullname'] : "";
 $email   = isset($_REQUEST['email']) ? $_REQUEST['email'] : "";
 $number  = isset($_REQUEST['number']) ? $_REQUEST['number'] : "";
 $message = isset($_REQUEST['message']) ? $_REQUEST['message'] : "";
 
+if ($name =="" && $email =="" && $number =="" && $message ==""){
+echo "please "."<a href='index.php'>Go Back</a>"." and put in a valid details";
+}
+
+elseif ($name ==""){
+    echo "please "."<a href='index.php'>Go Back</a>"." and put in your name";
+}
+
+elseif ($email ==""){
+    echo "please "."<a href='index.php'>Go Back</a>"." and put in your email";
+}
+
+elseif ($number ==""){
+    echo "please "."<a href='index.php'>Go Back</a>"." and put in your number";
+}
+elseif ($message ==""){
+    echo "please "."<a href='index.php'>Go Back</a>"." and put in your message";
+}
+
+else{
+    echo "Thanks for your feedback "."<a href='index.php'>Go Back</a>";
+}
+
+die;
 
 if ($name !="" && $email && $number && $message){
 //echo "here";die;
