@@ -213,7 +213,7 @@ PHP/Laravel</p>
         <div class="container">
         
             <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft animated" data-wow-offset="50" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInLeft;">
-              <form action="mail" method="post">
+              <form action="mail.php" method="post">
                 <label>NAME</label>
                 <input name="fullname" type="text" class="form-control" id="fullname">
                   
