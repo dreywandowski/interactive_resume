@@ -40,7 +40,19 @@ else{
     echo "Thanks for your feedback. ".$var."<a href='index.php'>Go Back</a>";
 }
 
-die;
+
+
+$posts = array();
+
+$posts[] = array('name'=> $name, 'number'=> $number, 'email'=> $email, 'message'=> $message);
+ 
+$response['posts'] = $posts;
+
+
+$fp = fopen('responses/'.$name.'.json', 'w');
+fwrite($fp, json_encode($response));
+fclose($fp);
+
 
 
 
