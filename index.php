@@ -11,9 +11,6 @@ Full Name == <input type="text" name="full_name">
 <input type="submit" name="submit">
 </form>
 
- <p> Hiiiiii.......</p>
-
-
 
 <?php 
 
